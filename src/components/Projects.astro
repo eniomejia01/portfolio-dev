@@ -1,39 +1,70 @@
 ---
 // import GitHub from "./icons/GitHub.astro"
-import NextJS from "./icons/NextJS.astro";
+import React from "./icons/React.astro";
 import Tailwind from "./icons/Tailwind.astro";
+import Vite from "./icons/Vite.astro";
+import Php from "./icons/Php.astro";
+import Sass from "./icons/Sass.astro";
+import Js from "./icons/Js.astro";
+import MySQL from "./icons/MySQL.astro";
 // import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro";
 
 const TAGS = {
-  NEXT: {
-    name: "Next.js",
+  REACT: {
+    name: "React",
     class: "bg-black text-white",
-    icon: NextJS,
+    icon: React,
   },
   TAILWIND: {
     name: "Tailwind CSS",
     class: "bg-[#003159] text-white",
     icon: Tailwind,
   },
+  VITE: {
+    name: "Vite",
+    class: "bg-black text-white",
+    icon: Vite,
+  },
+  PHP: {
+    name: "Php",
+    class: "bg-black text-white",
+    icon: Php,
+  },
+  SASS: {
+    name: "Sass",
+    class: "bg-black text-white",
+    icon: Sass,
+  },
+  JS: {
+    name: "Js",
+    class: "bg-black text-white",
+    icon: Js,
+  },
+  MYSQL: {
+    name: "MySQL",
+    class: "bg-black text-white",
+    icon: MySQL,
+  },
 };
 const PROJECTS = [
   {
-    title: "SVGL - A beautiful library with SVG logos",
+    title: "AppSalon - Cortes de cabello y más. Reserva tu cita",
     description:
-      "Biblioteca de logos SVG de las marcas más populares. +10k visitas al mes. +2K svgs descargados. Creado desde cero con Next.js, React y Tailwind CSS.",
+      "Página realizada en un curso de desarrollo web de Juan Pablo de la Torre y con mis modificaciones propias al diseño. La página funciona con una base de datos el cual permite ofrecer varios servicios.",
     link: "https://svgl.vercel.app/",
-    github: "https://github.com/pheralb/svgl",
-    image: "/projects/sgvl.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    github: "https://github.com/eniomejia01/appsalon-mvc-php.git",
+    image: "/projects/421shots_so.webp",
+    tags: [TAGS.PHP, TAGS.SASS, TAGS.JS, TAGS.MYSQL],
   },
   {
-    title: "AdventJS - Retos de programación con JavaScript y TypeScript",
+    title: "Online Store - Venta de artículos de uso personal",
     description:
-      "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
+      "Página realizada en un curso de Platzi y con mis modificaciones propias al diseño.",
     link: "https://adventjs.dev",
-    image: "/projects/adventjs.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    github: "https://github.com/eniomejia01/react-course-platzi.git",
+    image: "/projects/294shots_so.jpg",
+    tags: [TAGS.REACT, TAGS.TAILWIND, TAGS.VITE],
   },
 ];
 ---
