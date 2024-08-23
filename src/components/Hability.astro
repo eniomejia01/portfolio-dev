@@ -1,0 +1,126 @@
+---
+import React from "./icons/React.astro";
+import Tailwind from "./icons/Tailwind.astro";
+import Vite from "./icons/Vite.astro";
+import Php from "./icons/Php.astro";
+import Sass from "./icons/Sass.astro";
+import Js from "./icons/Js.astro";
+import MySQL from "./icons/MySQL.astro";
+import Html from "./icons/Html.astro";
+import Css from "./icons/Css.astro";
+import Astroicono from "./icons/Astroicono.astro";
+import Figma from "./icons/Figma.astro";
+import VisualSC from "./icons/VisualSC.astro";
+import Git from "./icons/Git.astro";
+import Github from "./icons/Github.astro";
+
+const TAGS = {
+    REACT: {
+        name: "React",
+        class: "bg-white/10  text-white transition hover:scale-110 hover:bg-white/5",
+        icon: React,
+    },
+    TAILWIND: {
+        name: "Tailwind",
+        class: "bg-white/10   text-white transition hover:scale-110 hover:bg-white/5",
+        icon: Tailwind,
+    },
+    VITE: {
+        name: "Vite",
+        class: "bg-white/10  text-white transition hover:scale-110 hover:bg-white/5",
+        icon: Vite,
+    },
+    PHP: {
+        name: "Php",
+        class: "bg-white/10  text-white transition hover:scale-110 hover:bg-white/5",
+        icon: Php,
+    },
+    SASS: {
+        name: "Sass",
+        class: "bg-white/10  text-white transition hover:scale-110 hover:bg-white/5",
+        icon: Sass,
+    },
+    JS: {
+        name: "Javascript",
+        class: "bg-white/10  text-white transition hover:scale-110 hover:bg-white/5",
+        icon: Js,
+    },
+    MYSQL: {
+        name: "MySQL",
+        class: "bg-white/10  text-white transition hover:scale-110 hover:bg-white/5",
+        icon: MySQL,
+    },
+    HTML: {
+        name: "Html",
+        class: "bg-white/10  text-white transition hover:scale-110 hover:bg-white/5",
+        icon: Html,
+    },
+    CSS: {
+        name: "Css",
+        class: "bg-white/10 text-white transition hover:scale-110 hover:bg-white/5",
+        icon: Css,
+    },
+    ASTRO: {
+        name: "Astro",
+        class: "bg-white/10  text-white transition hover:scale-110 hover:bg-white/5",
+        icon: Astroicono,
+    },
+    FIGMA: {
+        name: "Figma",
+        class: "bg-white/10  text-white transition hover:scale-110 hover:bg-white/5",
+        icon: Figma,
+    },
+    VISUALSC: {
+        name: "VSC",
+        class: "bg-white/10  text-white transition hover:scale-110 hover:bg-white/5",
+        icon: VisualSC,
+    },
+    GIT: {
+        name: "Git",
+        class: "bg-white/10  text-white transition hover:scale-110 hover:bg-white/5",
+        icon: Git,
+    },
+    GITHUB: {
+        name: "Github",
+        class: "bg-white/10  text-white transition hover:scale-110 hover:bg-white/5",
+        icon: Github,
+    },
+
+
+};
+
+const TECNOLOGY = [
+    {
+        tags: [TAGS.HTML, TAGS.CSS, TAGS.JS, TAGS.REACT, TAGS.SASS, TAGS.TAILWIND, TAGS.ASTRO, TAGS.FIGMA, TAGS.PHP, TAGS.MYSQL, TAGS.VISUALSC, TAGS.GIT, TAGS.GITHUB],
+    },
+
+];
+---
+
+<div class="flex flex-col items-center justify-center">
+
+    {
+        TECNOLOGY.map(({tags}) => (
+            <div class="flex flex-wrap mt-2">
+                <ul class="grid grid-cols-3 mb-2 gap-4">
+                {tags.map((tag) => (
+                    <li>
+                    <span
+                        class={`flex gap-x-2 rounded-full text-xs items-center ${tag.class} py-1 px-2 `}
+                    >
+                        <tag.icon class="size-4" />
+                        {tag.name}
+                    </span>
+                    </li>
+                ))}
+                </ul>
+            </div>
+        
+        ))
+    
+    
+    
+    } 
+
+</div>
+
