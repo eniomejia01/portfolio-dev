@@ -23,9 +23,9 @@ const { description, title } = Astro.props;
 	</head>
 	<body>
 
-		<div class="absolute top-0 z-[-2] h-screen w-[98
+		<!-- <div class="absolute top-0 z-[-2] h-screen w-[98
 		vw] bg-no-repeat bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]">
-		</div>
+		</div> -->
 
 		<Header />
 		<slot />
@@ -34,7 +34,7 @@ const { description, title } = Astro.props;
 </html>
 <style is:global>
 	:root {
-		color-scheme: light dark;
+		color-scheme: dark;
 	}
 	html {
 		font-family: "Onest Variable", system-ui, sans-serif;
@@ -43,7 +43,7 @@ const { description, title } = Astro.props;
 	}
 	
 	body {
-		background-color: #050505;
+		/* background-color: #1c1c1c; */
 		display: flex;
 		flex-direction: column;
 		min-height: 100vh;
