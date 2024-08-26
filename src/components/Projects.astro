@@ -9,6 +9,7 @@ import Js from "./icons/Js.astro";
 import MySQL from "./icons/MySQL.astro";
 // import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro";
+import Astroicono from "./icons/Astroicono.astro";
 
 const TAGS = {
   REACT: {
@@ -46,26 +47,41 @@ const TAGS = {
     class: "bg-black text-white",
     icon: MySQL,
   },
+  Astroicono: {
+    name: "Astro",
+    class: "bg-black text-white",
+    icon: Astroicono,
+  },
 };
 const PROJECTS = [
+  {
+      title: "Mi Porpofolio - Eniodev",
+      description:
+        "Este es mi portafolio personal, donde muestro mis habilidades y proyectos realizados. El diseño es de Midudev y con mis propias modificaciones.",
+      link: "https://porfolio-enio.netlify.app/",
+      github: "https://github.com/eniomejia01/react-course-platzi.git",
+      image: "/projects/33shots_so.webp",
+      tags: [TAGS.Astroicono, TAGS.TAILWIND, ],
+  },
+  {
+      title: "Online Store - Venta de artículos de uso personal",
+      description:
+        "Página realizada en un curso de Platzi y con mis modificaciones propias al diseño.",
+      link: "https://dainty-concha-fa9f68.netlify.app",
+      github: "https://github.com/eniomejia01/react-course-platzi.git",
+      image: "/projects/294shots_so.jpg",
+      tags: [TAGS.REACT, TAGS.TAILWIND, TAGS.VITE],
+  },
   {
     title: "AppSalon - Cortes de cabello y más. Reserva tu cita",
     description:
       "Página realizada en un curso de desarrollo web de Juan Pablo de la Torre y con mis modificaciones propias al diseño. La página funciona con una base de datos el cual permite ofrecer varios servicios.",
-    link: "https://svgl.vercel.app/",
+    // link: "https://svgl.vercel.app/",
     github: "https://github.com/eniomejia01/appsalon-mvc-php.git",
     image: "/projects/421shots_so.webp",
     tags: [TAGS.PHP, TAGS.SASS, TAGS.JS, TAGS.MYSQL],
   },
-  {
-    title: "Online Store - Venta de artículos de uso personal",
-    description:
-      "Página realizada en un curso de Platzi y con mis modificaciones propias al diseño.",
-    link: "https://dainty-concha-fa9f68.netlify.app",
-    github: "https://github.com/eniomejia01/react-course-platzi.git",
-    image: "/projects/294shots_so.jpg",
-    tags: [TAGS.REACT, TAGS.TAILWIND, TAGS.VITE],
-  },
+  
 ];
 ---
 
